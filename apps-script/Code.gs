@@ -1,5 +1,7 @@
+/** @OnlyCurrentDoc */
 /**
  * 日文溝通練習 — Google 試算表後端
+ * （第一行的 @OnlyCurrentDoc 讓這個程式只能存取「這一份」試算表）
  *
  * 使用方式（詳見 README）：
  * 1. 打開 Google 試算表「日文學習紀錄」→ 擴充功能 → Apps Script
