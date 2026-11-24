@@ -1,0 +1,407 @@
+{
+  "deck": "n5",
+  "title": "JLPT N5",
+  "description": "N5 基礎單字，例句以旅遊、遊戲開發、遊戲行銷的實際溝通情境為主。",
+  "words": [
+    {
+      "id": "n5-iku", "word": "行く", "reading": "いく", "pos": "動詞", "zh": "去", "en": "to go",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "搭車確認", "ja": "この{電車|でんしゃ}は{京都|きょうと}へ[[{行|い}き]]ますか。", "zh": "這班電車會到京都嗎？", "en": "Does this train go to Kyoto?", "enFocus": "train" },
+        { "theme": "gamedev", "register": "polite", "scene": "出差開會", "ja": "{来週|らいしゅう}、{東京|とうきょう}の{会社|かいしゃ}へ{打|う}ち{合|あ}わせに[[{行|い}き]]ます。", "zh": "下週我要去東京的公司開會。", "en": "Next week, I'm going to a company in Tokyo for a meeting.", "enFocus": "meeting" },
+        { "theme": "marketing", "register": "polite", "scene": "展場交流", "ja": "ゲームショウに[[{行|い}って]]、たくさんのプレイヤーと{話|はな}しました。", "zh": "我去了遊戲展，跟很多玩家聊天。", "en": "I went to the game show and talked with lots of players.", "enFocus": "game show" }
+      ]
+    },
+    {
+      "id": "n5-kuru", "word": "来る", "reading": "くる", "pos": "動詞", "zh": "來", "en": "to come",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "飯店接駁", "ja": "ホテルのバスは{何時|なんじ}に[[{来|き}]]ますか。", "zh": "飯店的接駁車幾點來？", "en": "What time does the hotel shuttle bus come?", "enFocus": "shuttle" },
+        { "theme": "gamedev", "register": "business", "scene": "合作方來訪", "ja": "{明日|あした}、パブリッシャーの{方|かた}が{会社|かいしゃ}に[[{来|き}]]ます。", "zh": "明天發行商的人會來公司。", "en": "Tomorrow, people from the publisher are coming to our office.", "enFocus": "publisher" },
+        { "theme": "marketing", "register": "polite", "scene": "活動回顧", "ja": "イベントにたくさんのファンが[[{来|き}て]]くれました。", "zh": "很多粉絲來參加了我們的活動。", "en": "Lots of fans came to our event.", "enFocus": "event" }
+      ]
+    },
+    {
+      "id": "n5-miru", "word": "見る", "reading": "みる", "pos": "動詞", "zh": "看", "en": "to see; to watch",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "安排行程", "ja": "{有名|ゆうめい}なお{寺|てら}を[[{見|み}]]に{行|い}きたいです。", "zh": "我想去看有名的寺廟。", "en": "I want to go see a famous temple.", "enFocus": "temple" },
+        { "theme": "gamedev", "register": "polite", "scene": "回報 bug", "ja": "このバグの{画面|がめん}を[[{見|み}て]]ください。", "zh": "請看一下這個 bug 的畫面。", "en": "Please take a look at the screen with this bug.", "enFocus": "take a look" },
+        { "theme": "marketing", "register": "casual", "scene": "社群貼文", "ja": "{新|あたら}しいトレーラー、もう[[{見|み}た]]？", "zh": "新的預告片看了嗎？", "en": "Have you watched the new trailer yet?", "enFocus": "trailer" }
+      ]
+    },
+    {
+      "id": "n5-kau", "word": "買う", "reading": "かう", "pos": "動詞", "zh": "買", "en": "to buy",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "購物", "ja": "{駅|えき}でお{土産|みやげ}を[[{買|か}い]]ました。", "zh": "我在車站買了伴手禮。", "en": "I bought souvenirs at the station.", "enFocus": "souvenirs" },
+        { "theme": "gamedev", "register": "polite", "scene": "說明系統", "ja": "ゲームの{中|なか}でアイテムを[[{買|か}う]]ことができます。", "zh": "可以在遊戲中購買道具。", "en": "You can buy in-game items.", "enFocus": "in-game" },
+        { "theme": "marketing", "register": "polite", "scene": "銷售報告", "ja": "セールの{時|とき}、たくさんの{人|ひと}がこのゲームを[[{買|か}い]]ました。", "zh": "特價期間，很多人買了這款遊戲。", "en": "Many people bought this game during the sale.", "enFocus": "sale" }
+      ]
+    },
+    {
+      "id": "n5-tsukau", "word": "使う", "reading": "つかう", "pos": "動詞", "zh": "使用", "en": "to use",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "結帳付款", "ja": "このカードは[[{使|つか}え]]ますか。", "zh": "這張卡可以用嗎？", "en": "Do you accept this card?", "enFocus": "accept" },
+        { "theme": "gamedev", "register": "polite", "scene": "介紹開發", "ja": "このゲームはUnityを[[{使|つか}って]]{作|つく}りました。", "zh": "這款遊戲是用 Unity 做的。", "en": "We built this game with Unity.", "enFocus": "built" },
+        { "theme": "marketing", "register": "polite", "scene": "廣告企劃", "ja": "{広告|こうこく}にゲームの{動画|どうが}を[[{使|つか}い]]ましょう。", "zh": "我們在廣告裡用遊戲實機影片吧。", "en": "Let's use gameplay videos in our ads.", "enFocus": "gameplay" }
+      ]
+    },
+    {
+      "id": "n5-tsukuru", "word": "作る", "reading": "つくる", "pos": "動詞", "zh": "做；製作", "en": "to make",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "體驗活動", "ja": "この{店|みせ}では{自分|じぶん}でお{寿司|すし}を[[{作|つく}る]]ことができます。", "zh": "在這家店可以自己做壽司。", "en": "At this shop, you can make sushi yourself.", "enFocus": "yourself" },
+        { "theme": "gamedev", "register": "polite", "scene": "自我介紹", "ja": "{私|わたし}たちは{小|ちい}さいチームでゲームを[[{作|つく}って]]います。", "zh": "我們是小團隊在做遊戲。", "en": "We're a small team making games.", "enFocus": "team" },
+        { "theme": "marketing", "register": "polite", "scene": "社群經營", "ja": "SNSの{投稿|とうこう}を{毎週|まいしゅう}[[{作|つく}って]]います。", "zh": "我每週製作社群貼文。", "en": "I create social media posts every week.", "enFocus": "social media" }
+      ]
+    },
+    {
+      "id": "n5-matsu", "word": "待つ", "reading": "まつ", "pos": "動詞", "zh": "等待", "en": "to wait",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "排隊等候", "ja": "すみません、ここで[[{待|ま}って]]もいいですか。", "zh": "不好意思，可以在這裡等嗎？", "en": "Excuse me, may I wait here?", "enFocus": "Excuse me" },
+        { "theme": "gamedev", "register": "business", "scene": "會議回覆", "ja": "{少々|しょうしょう}お[[{待|ま}ち]]ください。{確認|かくにん}します。", "zh": "請稍等，我確認一下。", "en": "Please wait a moment. I'll check.", "enFocus": "moment" },
+        { "theme": "marketing", "register": "casual", "scene": "玩家公告", "ja": "アップデートまで、もう{少|すこ}し[[{待|ま}って]]ね！", "zh": "更新再等一下下喔！", "en": "Please wait a little longer for the update!", "enFocus": "update" }
+      ]
+    },
+    {
+      "id": "n5-oshieru", "word": "教える", "reading": "おしえる", "pos": "動詞", "zh": "教；告訴", "en": "to teach; to tell",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "詢問推薦", "ja": "{近|ちか}くのおいしい{店|みせ}を[[{教|おし}えて]]ください。", "zh": "請告訴我附近好吃的店。", "en": "Please tell me a good restaurant nearby.", "enFocus": "nearby" },
+        { "theme": "gamedev", "register": "business", "scene": "確認時程", "ja": "{発売日|はつばいび}が{決|き}まったら、[[{教|おし}えて]]いただけますか。", "zh": "發售日決定後，可以告訴我嗎？", "en": "Could you let me know when the release date is decided?", "enFocus": "release date" },
+        { "theme": "marketing", "register": "polite", "scene": "社群互動", "ja": "どのキャラクターが{好|す}きか、コメントで[[{教|おし}えて]]ください！", "zh": "請在留言告訴我們你喜歡哪個角色！", "en": "Tell us in the comments which character you like!", "enFocus": "comments" }
+      ]
+    },
+    {
+      "id": "n5-kiku", "word": "聞く", "reading": "きく", "pos": "動詞", "zh": "聽；問", "en": "to listen; to ask",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "問路", "ja": "{道|みち}が{分|わ}からないので、{駅員|えきいん}さんに[[{聞|き}き]]ました。", "zh": "我不知道路，所以問了站務員。", "en": "I didn't know the way, so I asked the station staff.", "enFocus": "station staff" },
+        { "theme": "gamedev", "register": "polite", "scene": "會議提問", "ja": "{一|ひと}つ[[{聞|き}いて]]もいいですか。", "zh": "我可以問一個問題嗎？", "en": "May I ask you something?", "enFocus": "ask" },
+        { "theme": "marketing", "register": "polite", "scene": "營運說明", "ja": "プレイヤーの{声|こえ}をよく[[{聞|き}いて]]、ゲームを{良|よ}くします。", "zh": "我們會好好傾聽玩家的意見，讓遊戲變得更好。", "en": "We listen carefully to player feedback and improve the game.", "enFocus": "feedback" }
+      ]
+    },
+    {
+      "id": "n5-hanasu", "word": "話す", "reading": "はなす", "pos": "動詞", "zh": "說；談", "en": "to speak; to talk",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "溝通求助", "ja": "{英語|えいご}を[[{話|はな}せ]]ますか。", "zh": "你會說英文嗎？", "en": "Do you speak English?", "enFocus": "speak" },
+        { "theme": "gamedev", "register": "business", "scene": "討論規格", "ja": "{仕様|しよう}について、{少|すこ}し[[{話|はな}し]]たいことがあります。", "zh": "關於規格，我有些事想談一下。", "en": "There's something I'd like to discuss about the specifications.", "enFocus": "specifications" },
+        { "theme": "marketing", "register": "polite", "scene": "直播預告", "ja": "{配信|はいしん}で{開発|かいはつ}チームが{新|あたら}しいキャラについて[[{話|はな}し]]ます。", "zh": "開發團隊會在直播中聊新角色。", "en": "The dev team will talk about the new character on the stream.", "enFocus": "stream" }
+      ]
+    },
+    {
+      "id": "n5-kaku", "word": "書く", "reading": "かく", "pos": "動詞", "zh": "寫", "en": "to write",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "填寫表格", "ja": "ここに{名前|なまえ}を[[{書|か}いて]]ください。", "zh": "請在這裡寫上名字。", "en": "Please write your name here.", "enFocus": "write" },
+        { "theme": "gamedev", "register": "polite", "scene": "回報 bug", "ja": "バグの{内容|ないよう}をチケットに[[{書|か}いて]]おきました。", "zh": "我已經把 bug 的內容寫進工單了。", "en": "I wrote the bug details in the ticket.", "enFocus": "ticket" },
+        { "theme": "marketing", "register": "polite", "scene": "上架準備", "ja": "ストアページの{説明文|せつめいぶん}を[[{書|か}き]]ました。{見|み}てもらえますか。", "zh": "我寫好商店頁面的介紹了，可以幫我看看嗎？", "en": "I wrote the store page description. Could you take a look?", "enFocus": "description" }
+      ]
+    },
+    {
+      "id": "n5-hajimaru", "word": "始まる", "reading": "はじまる", "pos": "動詞", "zh": "開始", "en": "to begin",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "參加祭典", "ja": "{花火|はなび}は{何時|なんじ}に[[{始|はじ}まり]]ますか。", "zh": "煙火幾點開始？", "en": "What time do the fireworks start?", "enFocus": "fireworks" },
+        { "theme": "gamedev", "register": "polite", "scene": "時程通知", "ja": "テストプレイは{来週|らいしゅう}の{月曜日|げつようび}から[[{始|はじ}まり]]ます。", "zh": "試玩測試從下週一開始。", "en": "Playtesting starts next Monday.", "enFocus": "Playtesting" },
+        { "theme": "marketing", "register": "polite", "scene": "活動公告", "ja": "{明日|あした}からサマーセールが[[{始|はじ}まり]]ます！", "zh": "夏季特賣明天開始！", "en": "The summer sale starts tomorrow!", "enFocus": "summer sale" }
+      ]
+    },
+    {
+      "id": "n5-owaru", "word": "終わる", "reading": "おわる", "pos": "動詞", "zh": "結束", "en": "to end; to finish",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "參加行程", "ja": "ツアーは{何時|なんじ}ごろ[[{終|お}わり]]ますか。", "zh": "導覽行程大概幾點結束？", "en": "Around what time does the tour end?", "enFocus": "tour" },
+        { "theme": "gamedev", "register": "polite", "scene": "進度回報", "ja": "{今週中|こんしゅうちゅう}にこのステージのデザインが[[{終|お}わり]]ます。", "zh": "這個關卡的設計這週內會完成。", "en": "The design for this level will be finished this week.", "enFocus": "level" },
+        { "theme": "marketing", "register": "polite", "scene": "活動公告", "ja": "イベントは{日曜日|にちようび}の{夜|よる}に[[{終|お}わり]]ます。お{見逃|みのが}しなく！", "zh": "活動在週日晚上結束，別錯過！", "en": "The event ends Sunday night. Don't miss it!", "enFocus": "Don't miss it" }
+      ]
+    },
+    {
+      "id": "n5-dasu", "word": "出す", "reading": "だす", "pos": "動詞", "zh": "拿出；推出；發出", "en": "to take out; to release",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "入境・入住", "ja": "パスポートを[[{出|だ}して]]ください。", "zh": "請出示護照。", "en": "Please show me your passport.", "enFocus": "passport" },
+        { "theme": "gamedev", "register": "polite", "scene": "發行計畫", "ja": "{春|はる}にSteamでデモを[[{出|だ}し]]ます。", "zh": "我們春天會在 Steam 推出試玩版。", "en": "We'll release a demo on Steam in spring.", "enFocus": "demo" },
+        { "theme": "marketing", "register": "business", "scene": "媒體宣傳", "ja": "プレスリリースを{明日|あした}の{朝|あさ}[[{出|だ}し]]ます。", "zh": "我們明天早上發布新聞稿。", "en": "We'll send out the press release tomorrow morning.", "enFocus": "press release" }
+      ]
+    },
+    {
+      "id": "n5-wakaru", "word": "分かる", "reading": "わかる", "pos": "動詞", "zh": "懂；知道", "en": "to understand",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "溝通求助", "ja": "すみません、{日本語|にほんご}が{少|すこ}ししか[[{分|わ}かり]]ません。", "zh": "不好意思，我只懂一點點日文。", "en": "Sorry, I only understand a little Japanese.", "enFocus": "a little" },
+        { "theme": "gamedev", "register": "polite", "scene": "修 bug", "ja": "{原因|げんいん}が[[{分|わ}かり]]ました。すぐ{直|なお}します。", "zh": "找到原因了，馬上修正。", "en": "We figured out the cause. We'll fix it right away.", "enFocus": "figured out" },
+        { "theme": "marketing", "register": "polite", "scene": "成效分析", "ja": "{数字|すうじ}を{見|み}ると、どの{広告|こうこく}がいいか[[{分|わ}かり]]ます。", "zh": "看數據就知道哪個廣告效果好。", "en": "The numbers show us which ad performs better.", "enFocus": "performs" }
+      ]
+    },
+    {
+      "id": "n5-asobu", "word": "遊ぶ", "reading": "あそぶ", "pos": "動詞", "zh": "玩", "en": "to play",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "分享旅程", "ja": "{週末|しゅうまつ}は{大阪|おおさか}で[[{遊|あそ}び]]ました。", "zh": "週末在大阪玩了。", "en": "I had fun in Osaka over the weekend.", "enFocus": "weekend" },
+        { "theme": "gamedev", "register": "polite", "scene": "介紹玩法", "ja": "このゲームは{一人|ひとり}でも{友達|ともだち}とも[[{遊|あそ}べ]]ます。", "zh": "這款遊戲一個人或跟朋友都能玩。", "en": "You can play this game alone or with friends.", "enFocus": "alone" },
+        { "theme": "marketing", "register": "casual", "scene": "社群互動", "ja": "{新|あたら}しいモード、みんなもう[[{遊|あそ}んだ]]？", "zh": "新模式大家玩過了嗎？", "en": "Has everyone played the new mode yet?", "enFocus": "mode" }
+      ]
+    },
+    {
+      "id": "n5-yasumu", "word": "休む", "reading": "やすむ", "pos": "動詞", "zh": "休息；請假", "en": "to rest; to take time off",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "旅途休息", "ja": "{少|すこ}し{疲|つか}れたので、カフェで[[{休|やす}み]]ましょう。", "zh": "有點累了，在咖啡廳休息一下吧。", "en": "I'm a little tired, so let's take a break at a café.", "enFocus": "take a break" },
+        { "theme": "gamedev", "register": "polite", "scene": "請假聯絡", "ja": "すみません、{体調|たいちょう}が{悪|わる}いので{今日|きょう}は[[{休|やす}み]]ます。", "zh": "不好意思，我身體不舒服，今天請假。", "en": "Sorry, I'm not feeling well, so I'm taking the day off.", "enFocus": "day off" },
+        { "theme": "marketing", "register": "business", "scene": "客服公告", "ja": "{年末|ねんまつ}はサポートが[[{休|やす}み]]になります。", "zh": "年底期間客服暫停服務。", "en": "Customer support will be closed over the year-end holidays.", "enFocus": "Customer support" }
+      ]
+    },
+    {
+      "id": "n5-shiru", "word": "知る", "reading": "しる", "pos": "動詞", "zh": "知道；認識", "en": "to know",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "問路", "ja": "この{近|ちか}くにコンビニがあるか[[{知|し}って]]いますか。", "zh": "你知道這附近有沒有便利商店嗎？", "en": "Do you know if there's a convenience store near here?", "enFocus": "convenience store" },
+        { "theme": "gamedev", "register": "polite", "scene": "團隊求助", "ja": "そのツールの{使|つか}い{方|かた}を[[{知|し}って]]いる{人|ひと}はいますか。", "zh": "有人知道那個工具怎麼用嗎？", "en": "Does anyone know how to use that tool?", "enFocus": "tool" },
+        { "theme": "marketing", "register": "polite", "scene": "宣傳目標", "ja": "もっと{多|おお}くの{人|ひと}にこのゲームを[[{知|し}って]]もらいたいです。", "zh": "我們希望讓更多人知道這款遊戲。", "en": "We want to raise awareness of this game.", "enFocus": "raise awareness" }
+      ]
+    },
+    {
+      "id": "n5-uru", "word": "売る", "reading": "うる", "pos": "動詞", "zh": "賣", "en": "to sell",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "購物", "ja": "{水|みず}はどこで[[{売|う}って]]いますか。", "zh": "哪裡有賣水？", "en": "Where do they sell water?", "enFocus": "sell" },
+        { "theme": "gamedev", "register": "polite", "scene": "發行策略", "ja": "{日本|にほん}ではパッケージ{版|ばん}も[[{売|う}り]]たいです。", "zh": "在日本我們也想賣實體版。", "en": "In Japan, we also want to sell a physical edition.", "enFocus": "physical edition" },
+        { "theme": "marketing", "register": "polite", "scene": "周邊販售", "ja": "このグッズはイベント{会場|かいじょう}だけで[[{売|う}り]]ます。", "zh": "這個周邊只在活動會場販售。", "en": "We'll sell this merch only at the event venue.", "enFocus": "merch" }
+      ]
+    },
+    {
+      "id": "n5-hairu", "word": "入る", "reading": "はいる", "pos": "動詞", "zh": "進入；加入", "en": "to enter; to join",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "住宿禮儀", "ja": "{部屋|へや}に[[{入|はい}る]]{前|まえ}に、{靴|くつ}を{脱|ぬ}いでください。", "zh": "進房間前請脫鞋。", "en": "Please take off your shoes before entering the room.", "enFocus": "take off" },
+        { "theme": "gamedev", "register": "polite", "scene": "團隊消息", "ja": "{来月|らいげつ}から{新|あたら}しいプログラマーがチームに[[{入|はい}り]]ます。", "zh": "下個月有新的程式設計師加入團隊。", "en": "A new programmer will join the team next month.", "enFocus": "join" },
+        { "theme": "marketing", "register": "casual", "scene": "社群導流", "ja": "Discordサーバーに[[{入|はい}って]]、{最新|さいしん}{情報|じょうほう}をチェックしてね！", "zh": "加入我們的 Discord 伺服器，掌握最新消息！", "en": "Join our Discord server and check out the latest news!", "enFocus": "latest news" }
+      ]
+    },
+    {
+      "id": "n5-eki", "word": "駅", "reading": "えき", "pos": "名詞", "zh": "車站", "en": "station",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "問路", "ja": "{一番|いちばん}{近|ちか}い[[{駅|えき}]]はどこですか。", "zh": "最近的車站在哪裡？", "en": "Where is the nearest station?", "enFocus": "nearest" },
+        { "theme": "gamedev", "register": "polite", "scene": "告知地點", "ja": "{会社|かいしゃ}は[[{駅|えき}]]から{歩|ある}いて5{分|ふん}です。", "zh": "公司從車站走路五分鐘。", "en": "Our office is a five-minute walk from the station.", "enFocus": "five-minute walk" },
+        { "theme": "marketing", "register": "polite", "scene": "玩家回饋", "ja": "[[{駅|えき}]]の{広告|こうこく}を{見|み}て、このゲームを{知|し}りました。", "zh": "我是看到車站的廣告才知道這款遊戲的。", "en": "I found out about this game from an ad at the station.", "enFocus": "found out" }
+      ]
+    },
+    {
+      "id": "n5-kippu", "word": "切符", "reading": "きっぷ", "pos": "名詞", "zh": "車票", "en": "ticket",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "搭車", "ja": "[[{切符|きっぷ}]]はどこで{買|か}えますか。", "zh": "在哪裡可以買車票？", "en": "Where can I buy a ticket?", "enFocus": "ticket" },
+        { "theme": "gamedev", "register": "polite", "scene": "介紹企劃", "ja": "[[{切符|きっぷ}]]を{集|あつ}めながら{旅|たび}をするゲームを{作|つく}っています。", "zh": "我們在做一款一邊收集車票、一邊旅行的遊戲。", "en": "We're making a game where you travel while collecting tickets.", "enFocus": "collecting" },
+        { "theme": "marketing", "register": "polite", "scene": "聯名企劃", "ja": "{鉄道会社|てつどうがいしゃ}とコラボして、{限定|げんてい}デザインの[[{切符|きっぷ}]]を{作|つく}りました。", "zh": "我們跟鐵路公司聯名，推出了限定設計的車票。", "en": "We collaborated with a railway company to create limited-edition tickets.", "enFocus": "limited-edition" }
+      ]
+    },
+    {
+      "id": "n5-heya", "word": "部屋", "reading": "へや", "pos": "名詞", "zh": "房間", "en": "room",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "飯店入住", "ja": "[[{部屋|へや}]]のWi-Fiのパスワードを{教|おし}えてください。", "zh": "請告訴我房間的 Wi-Fi 密碼。", "en": "Could you tell me the Wi-Fi password for the room?", "enFocus": "password" },
+        { "theme": "gamedev", "register": "polite", "scene": "美術回饋", "ja": "このマップの[[{部屋|へや}]]は{少|すこ}し{暗|くら}すぎますね。", "zh": "這張地圖裡的房間有點太暗了。", "en": "This room on the map is a bit too dark.", "enFocus": "a bit too" },
+        { "theme": "marketing", "register": "polite", "scene": "賣點說明", "ja": "{主人公|しゅじんこう}の[[{部屋|へや}]]を{自由|じゆう}に{飾|かざ}れるのが、このゲームの{魅力|みりょく}です。", "zh": "可以自由佈置主角的房間，是這款遊戲的魅力。", "en": "Being able to freely decorate the main character's room is what makes this game charming.", "enFocus": "decorate" }
+      ]
+    },
+    {
+      "id": "n5-mise", "word": "店", "reading": "みせ", "pos": "名詞", "zh": "店", "en": "shop; store",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "購物", "ja": "この[[{店|みせ}]]は{何時|なんじ}まで{開|あ}いていますか。", "zh": "這家店開到幾點？", "en": "How late is this shop open?", "enFocus": "How late" },
+        { "theme": "gamedev", "register": "polite", "scene": "說明系統", "ja": "プレイヤーはゲームの{中|なか}で[[{店|みせ}]]を{開|ひら}くことができます。", "zh": "玩家可以在遊戲裡開店。", "en": "Players can open their own shop in the game.", "enFocus": "Players" },
+        { "theme": "marketing", "register": "polite", "scene": "實體推廣", "ja": "{秋葉原|あきはばら}の[[{店|みせ}]]に{試遊台|しゆうだい}を{置|お}かせてもらいました。", "zh": "秋葉原的店讓我們擺了試玩台。", "en": "A shop in Akihabara let us set up a demo station.", "enFocus": "demo station" }
+      ]
+    },
+    {
+      "id": "n5-michi", "word": "道", "reading": "みち", "pos": "名詞", "zh": "路", "en": "road; way",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "求助", "ja": "すみません、[[{道|みち}]]に{迷|まよ}ってしまいました。", "zh": "不好意思，我迷路了。", "en": "Excuse me, I've gotten lost.", "enFocus": "lost" },
+        { "theme": "gamedev", "register": "polite", "scene": "關卡回饋", "ja": "この[[{道|みち}]]は{長|なが}すぎて、プレイヤーが{飽|あ}きるかもしれません。", "zh": "這條路太長，玩家可能會膩。", "en": "This path is too long. Players might get bored.", "enFocus": "get bored" },
+        { "theme": "marketing", "register": "polite", "scene": "品牌故事", "ja": "{開発|かいはつ}チームが{歩|ある}いてきた[[{道|みち}]]を{動画|どうが}にまとめました。", "zh": "我們把開發團隊一路走來的歷程做成了影片。", "en": "We made a video about the dev team's journey.", "enFocus": "journey" }
+      ]
+    },
+    {
+      "id": "n5-chizu", "word": "地図", "reading": "ちず", "pos": "名詞", "zh": "地圖", "en": "map",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "問路", "ja": "この[[{地図|ちず}]]で{場所|ばしょ}を{教|おし}えてもらえますか。", "zh": "可以在這張地圖上告訴我位置嗎？", "en": "Could you show me where it is on this map?", "enFocus": "show me" },
+        { "theme": "gamedev", "register": "polite", "scene": "UI 討論", "ja": "ワールドの[[{地図|ちず}]]をもっと{分|わ}かりやすくしましょう。", "zh": "我們把世界地圖做得更好懂吧。", "en": "Let's make the world map easier to understand.", "enFocus": "world map" },
+        { "theme": "marketing", "register": "polite", "scene": "粉絲企劃", "ja": "ゲームに{出|で}てくる{場所|ばしょ}の[[{地図|ちず}]]をファンのために{作|つく}りました。", "zh": "我們為粉絲做了一張遊戲中出現地點的地圖。", "en": "We made a map of real-world locations from the game for fans.", "enFocus": "real-world" }
+      ]
+    },
+    {
+      "id": "n5-denwa", "word": "電話", "reading": "でんわ", "pos": "名詞", "zh": "電話", "en": "telephone; phone call",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "訂位", "ja": "レストランに[[{電話|でんわ}]]して{予約|よやく}しました。", "zh": "我打電話給餐廳訂了位。", "en": "I called the restaurant and made a reservation.", "enFocus": "reservation" },
+        { "theme": "gamedev", "register": "business", "scene": "約時間", "ja": "{明日|あした}の{午後|ごご}、[[{電話|でんわ}]]で{少|すこ}しお{話|はなし}できますか。", "zh": "明天下午可以通個電話聊一下嗎？", "en": "Could we have a quick call tomorrow afternoon?", "enFocus": "quick call" },
+        { "theme": "marketing", "register": "business", "scene": "客服公告", "ja": "お{問|と}い{合|あ}わせは[[{電話|でんわ}]]ではなく、メールでお{願|ねが}いします。", "zh": "洽詢請使用電子郵件，不接受電話。", "en": "Please contact us by email, not by phone.", "enFocus": "contact" }
+      ]
+    },
+    {
+      "id": "n5-namae", "word": "名前", "reading": "なまえ", "pos": "名詞", "zh": "名字", "en": "name",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "飯店入住", "ja": "リンという[[{名前|なまえ}]]で{予約|よやく}しています。", "zh": "我用「林」這個名字訂了房。", "en": "I have a reservation under the name Lin.", "enFocus": "under the name" },
+        { "theme": "gamedev", "register": "polite", "scene": "企劃討論", "ja": "このキャラの[[{名前|なまえ}]]はまだ{決|き}まっていません。", "zh": "這個角色的名字還沒決定。", "en": "This character's name hasn't been decided yet.", "enFocus": "decided" },
+        { "theme": "marketing", "register": "polite", "scene": "視覺設計", "ja": "ゲームの[[{名前|なまえ}]]を{覚|おぼ}えてもらうために、ロゴを{目立|めだ}たせましょう。", "zh": "為了讓大家記住遊戲名稱，把 logo 做得醒目一點吧。", "en": "Let's make the logo stand out so people remember the game's name.", "enFocus": "stand out" }
+      ]
+    },
+    {
+      "id": "n5-jikan", "word": "時間", "reading": "じかん", "pos": "名詞", "zh": "時間", "en": "time",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "交通", "ja": "{空港|くうこう}まで{電車|でんしゃ}でどのくらい[[{時間|じかん}]]がかかりますか。", "zh": "搭電車到機場要多久？", "en": "How long does it take to get to the airport by train?", "enFocus": "How long" },
+        { "theme": "gamedev", "register": "business", "scene": "調整時程", "ja": "{会議|かいぎ}の[[{時間|じかん}]]を{変|か}えてもいいですか。", "zh": "可以改一下開會時間嗎？", "en": "Could we reschedule the meeting?", "enFocus": "reschedule" },
+        { "theme": "marketing", "register": "polite", "scene": "數據報告", "ja": "{平均|へいきん}プレイ[[{時間|じかん}]]が{先月|せんげつ}より{長|なが}くなりました。", "zh": "平均遊玩時間比上個月長了。", "en": "Average playtime is longer than last month.", "enFocus": "playtime" }
+      ]
+    },
+    {
+      "id": "n5-shigoto", "word": "仕事", "reading": "しごと", "pos": "名詞", "zh": "工作", "en": "work; job",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "入境問答", "ja": "{日本|にほん}へは[[{仕事|しごと}]]で{来|き}ました。", "zh": "我是來日本出差的。", "en": "I came to Japan for work.", "enFocus": "for work" },
+        { "theme": "gamedev", "register": "polite", "scene": "自我介紹", "ja": "{私|わたし}の[[{仕事|しごと}]]はゲームのUIデザインです。", "zh": "我的工作是遊戲 UI 設計。", "en": "My job is UI design for games.", "enFocus": "job" },
+        { "theme": "marketing", "register": "polite", "scene": "職務說明", "ja": "{海外|かいがい}のファンと{話|はな}すのも{大切|たいせつ}な[[{仕事|しごと}]]です。", "zh": "跟海外粉絲交流也是重要的工作。", "en": "Talking with overseas fans is also an important part of the job.", "enFocus": "overseas" }
+      ]
+    },
+    {
+      "id": "n5-kaisha", "word": "会社", "reading": "かいしゃ", "pos": "名詞", "zh": "公司", "en": "company",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "購物", "ja": "[[{会社|かいしゃ}]]の{人|ひと}へのお{土産|みやげ}を{探|さが}しています。", "zh": "我在找要送給公司同事的伴手禮。", "en": "I'm looking for souvenirs for my coworkers.", "enFocus": "coworkers" },
+        { "theme": "gamedev", "register": "business", "scene": "自我介紹", "ja": "{私|わたし}たちは{台湾|たいわん}のゲーム[[{会社|かいしゃ}]]です。", "zh": "我們是台灣的遊戲公司。", "en": "We are a game company from Taiwan.", "enFocus": "company" },
+        { "theme": "marketing", "register": "polite", "scene": "合作宣傳", "ja": "{日本|にほん}のPR[[{会社|かいしゃ}]]と{一緒|いっしょ}にプロモーションをしています。", "zh": "我們跟日本的公關公司一起做宣傳。", "en": "We're running a promotion together with a Japanese PR company.", "enFocus": "promotion" }
+      ]
+    },
+    {
+      "id": "n5-shashin", "word": "写真", "reading": "しゃしん", "pos": "名詞", "zh": "照片", "en": "photo",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "觀光", "ja": "すみません、[[{写真|しゃしん}]]を{撮|と}ってもらえませんか。", "zh": "不好意思，可以幫我們拍張照嗎？", "en": "Excuse me, could you take a photo of us?", "enFocus": "take a photo" },
+        { "theme": "gamedev", "register": "polite", "scene": "功能企劃", "ja": "ゲームに[[{写真|しゃしん}]]モードを{入|い}れたいです。", "zh": "我們想在遊戲裡加入拍照模式。", "en": "We want to add a photo mode to the game.", "enFocus": "photo mode" },
+        { "theme": "marketing", "register": "polite", "scene": "社群活動", "ja": "ゲームの{中|なか}で{撮|と}った[[{写真|しゃしん}]]をSNSでシェアしてください！", "zh": "把你在遊戲中拍的照片分享到社群吧！", "en": "Share the photos you took in the game on social media!", "enFocus": "Share" }
+      ]
+    },
+    {
+      "id": "n5-shitsumon", "word": "質問", "reading": "しつもん", "pos": "名詞", "zh": "提問；問題", "en": "question",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "詢問", "ja": "[[{質問|しつもん}]]があるんですが、{今|いま}いいですか。", "zh": "我有個問題，現在方便嗎？", "en": "I have a question. Do you have a moment?", "enFocus": "Do you have a moment" },
+        { "theme": "gamedev", "register": "business", "scene": "規格確認", "ja": "{仕様書|しようしょ}について、いくつか[[{質問|しつもん}]]があります。", "zh": "關於規格書，我有幾個問題。", "en": "I have a few questions about the spec document.", "enFocus": "spec" },
+        { "theme": "marketing", "register": "polite", "scene": "直播互動", "ja": "{配信|はいしん}の{最後|さいご}に、ファンの[[{質問|しつもん}]]に{答|こた}えます。", "zh": "直播最後，我們會回答粉絲的問題。", "en": "We'll do a Q&A with fans at the end of the stream.", "enFocus": "Q&A" }
+      ]
+    },
+    {
+      "id": "n5-mondai", "word": "問題", "reading": "もんだい", "pos": "名詞", "zh": "問題；狀況", "en": "problem; issue",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "回應", "ja": "[[{問題|もんだい}]]ありません。{大丈夫|だいじょうぶ}です。", "zh": "沒問題，我沒事。", "en": "No problem. I'm fine.", "enFocus": "No problem" },
+        { "theme": "gamedev", "register": "polite", "scene": "狀況回報", "ja": "ログインの[[{問題|もんだい}]]はもう{直|なお}りました。", "zh": "登入的問題已經修好了。", "en": "The login issue has been fixed.", "enFocus": "issue" },
+        { "theme": "marketing", "register": "business", "scene": "補償公告", "ja": "サーバーの[[{問題|もんだい}]]で{遊|あそ}べなかった{方|かた}に、おわびのアイテムを{送|おく}ります。", "zh": "因伺服器問題而無法遊玩的玩家，我們會發送補償道具。", "en": "Players who couldn't play due to the server issue will receive compensation items.", "enFocus": "compensation" }
+      ]
+    },
+    {
+      "id": "n5-raishuu", "word": "来週", "reading": "らいしゅう", "pos": "名詞", "zh": "下週", "en": "next week",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "旅行計畫", "ja": "[[{来週|らいしゅう}]]、{北海道|ほっかいどう}へ{旅行|りょこう}に{行|い}きます。", "zh": "下週我要去北海道旅行。", "en": "Next week, I'm taking a trip to Hokkaido.", "enFocus": "trip" },
+        { "theme": "gamedev", "register": "polite", "scene": "交付時程", "ja": "[[{来週|らいしゅう}]]までにビルドを{送|おく}ります。", "zh": "我們會在下週前送出建置版本。", "en": "We'll send the build by next week.", "enFocus": "build" },
+        { "theme": "marketing", "register": "polite", "scene": "預告", "ja": "[[{来週|らいしゅう}]]の{金曜日|きんようび}に{新|あたら}しいPVを{公開|こうかい}します。", "zh": "下週五會公開新的宣傳影片。", "en": "We'll reveal the new promo video next Friday.", "enFocus": "reveal" }
+      ]
+    },
+    {
+      "id": "n5-mainichi", "word": "毎日", "reading": "まいにち", "pos": "名詞", "zh": "每天", "en": "every day",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "分享旅程", "ja": "{旅行中|りょこうちゅう}は[[{毎日|まいにち}]]2{万歩|まんぽ}{歩|ある}きました。", "zh": "旅行期間我每天走兩萬步。", "en": "I walked 20,000 steps every day during the trip.", "enFocus": "steps" },
+        { "theme": "gamedev", "register": "polite", "scene": "團隊日常", "ja": "[[{毎日|まいにち}]]{朝|あさ}10{時|じ}に{短|みじか}いミーティングをします。", "zh": "我們每天早上十點開簡短的晨會。", "en": "We have a short stand-up meeting at 10 a.m. every day.", "enFocus": "stand-up" },
+        { "theme": "marketing", "register": "polite", "scene": "活動說明", "ja": "[[{毎日|まいにち}]]ログインすると、{特別|とくべつ}なアイテムがもらえます。", "zh": "每天登入就能獲得特別道具。", "en": "Log in every day to get special items.", "enFocus": "Log in" }
+      ]
+    },
+    {
+      "id": "n5-gaikoku", "word": "外国", "reading": "がいこく", "pos": "名詞", "zh": "外國", "en": "foreign country",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "結帳", "ja": "[[{外国|がいこく}]]のクレジットカードは{使|つか}えますか。", "zh": "可以用外國的信用卡嗎？", "en": "Can I use a foreign credit card?", "enFocus": "credit card" },
+        { "theme": "gamedev", "register": "polite", "scene": "在地化", "ja": "[[{外国|がいこく}]]のプレイヤーのために、{字幕|じまく}を{入|い}れました。", "zh": "我們為了國外玩家加了字幕。", "en": "We added subtitles for players overseas.", "enFocus": "subtitles" },
+        { "theme": "marketing", "register": "polite", "scene": "媒體公關", "ja": "[[{外国|がいこく}]]のメディアにもゲームを{紹介|しょうかい}したいです。", "zh": "我們也想把遊戲介紹給國外媒體。", "en": "We'd also like to introduce our game to foreign media.", "enFocus": "media" }
+      ]
+    },
+    {
+      "id": "n5-kotoba", "word": "言葉", "reading": "ことば", "pos": "名詞", "zh": "話語；詞", "en": "word; language",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "溝通求助", "ja": "この[[{言葉|ことば}]]はどういう{意味|いみ}ですか。", "zh": "這個詞是什麼意思？", "en": "What does this word mean?", "enFocus": "mean" },
+        { "theme": "gamedev", "register": "polite", "scene": "文案撰寫", "ja": "{子|こ}どもにも{分|わ}かる[[{言葉|ことば}]]でチュートリアルを{書|か}きましょう。", "zh": "我們用小孩也看得懂的文字來寫教學吧。", "en": "Let's write the tutorial in words that even kids can understand.", "enFocus": "tutorial" },
+        { "theme": "marketing", "register": "polite", "scene": "感謝貼文", "ja": "ファンの{温|あたた}かい[[{言葉|ことば}]]に、チーム{全員|ぜんいん}が{元気|げんき}をもらっています。", "zh": "粉絲溫暖的話語讓整個團隊充滿動力。", "en": "The whole team is encouraged by the fans' kind words.", "enFocus": "encouraged" }
+      ]
+    },
+    {
+      "id": "n5-atarashii", "word": "新しい", "reading": "あたらしい", "pos": "い形容詞", "zh": "新的", "en": "new",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "住宿", "ja": "{駅|えき}の{前|まえ}に[[{新|あたら}しい]]ホテルができました。", "zh": "車站前開了一家新飯店。", "en": "A new hotel opened in front of the station.", "enFocus": "opened" },
+        { "theme": "gamedev", "register": "business", "scene": "交付", "ja": "[[{新|あたら}しい]]ビルドをアップしました。{確認|かくにん}をお{願|ねが}いします。", "zh": "我上傳了新的建置版本，麻煩確認。", "en": "I've uploaded the new build. Please check it.", "enFocus": "uploaded" },
+        { "theme": "marketing", "register": "polite", "scene": "預告", "ja": "[[{新|あたら}しい]]キャラクターの{情報|じょうほう}は{明日|あした}{発表|はっぴょう}します！", "zh": "新角色的情報明天公開！", "en": "We'll announce the new character tomorrow!", "enFocus": "announce" }
+      ]
+    },
+    {
+      "id": "n5-omoshiroi", "word": "面白い", "reading": "おもしろい", "pos": "い形容詞", "zh": "有趣", "en": "interesting; fun",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "分享旅程", "ja": "{昨日|きのう}{見|み}たお{祭|まつ}りはとても[[{面白|おもしろ}かった]]です。", "zh": "昨天看的祭典非常有趣。", "en": "The festival I saw yesterday was really interesting.", "enFocus": "festival" },
+        { "theme": "gamedev", "register": "polite", "scene": "企劃會議", "ja": "このアイデアは[[{面白|おもしろ}い]]ですね。{試|ため}してみましょう。", "zh": "這個點子很有趣，我們試試看吧。", "en": "This idea is interesting. Let's try it.", "enFocus": "try it" },
+        { "theme": "marketing", "register": "polite", "scene": "評價報告", "ja": "「[[{面白|おもしろ}い]]！」というレビューがたくさん{来|き}ています。", "zh": "收到很多「好好玩！」的評論。", "en": "We're getting lots of reviews saying \"It's fun!\"", "enFocus": "reviews" }
+      ]
+    },
+    {
+      "id": "n5-muzukashii", "word": "難しい", "reading": "むずかしい", "pos": "い形容詞", "zh": "困難", "en": "difficult",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "交通", "ja": "{日本|にほん}の{電車|でんしゃ}の{乗|の}り{換|か}えは{少|すこ}し[[{難|むずか}しい]]です。", "zh": "在日本轉乘電車有點難。", "en": "Transferring trains in Japan is a bit difficult.", "enFocus": "Transferring" },
+        { "theme": "gamedev", "register": "polite", "scene": "平衡調整", "ja": "ボス{戦|せん}が[[{難|むずか}し]]すぎるという{意見|いけん}が{多|おお}いです。", "zh": "很多人反映頭目戰太難了。", "en": "Many people say the boss fight is too difficult.", "enFocus": "boss fight" },
+        { "theme": "marketing", "register": "polite", "scene": "市場分析", "ja": "{日本|にほん}の{市場|しじょう}は[[{難|むずか}しい]]ですが、チャンスも{大|おお}きいです。", "zh": "日本市場雖然難，但機會也很大。", "en": "The Japanese market is difficult, but the opportunities are big too.", "enFocus": "market" }
+      ]
+    },
+    {
+      "id": "n5-takai", "word": "高い", "reading": "たかい", "pos": "い形容詞", "zh": "貴；高", "en": "expensive; high",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "購物", "ja": "ちょっと[[{高|たか}い]]ですね。もう{少|すこ}し{安|やす}いのはありますか。", "zh": "有點貴耶，有沒有便宜一點的？", "en": "It's a bit expensive. Do you have anything a little cheaper?", "enFocus": "cheaper" },
+        { "theme": "gamedev", "register": "polite", "scene": "效能優化", "ja": "スマホで{動|うご}かすには、{画質|がしつ}の{設定|せってい}が[[{高|たか}]]すぎます。", "zh": "要在手機上跑的話，畫質設定太高了。", "en": "The graphics settings are too high to run on smartphones.", "enFocus": "graphics settings" },
+        { "theme": "marketing", "register": "polite", "scene": "成效分析", "ja": "この{広告|こうこく}はクリック{率|りつ}が[[{高|たか}い]]です。", "zh": "這支廣告的點擊率很高。", "en": "This ad has a high click-through rate.", "enFocus": "click-through rate" }
+      ]
+    },
+    {
+      "id": "n5-yasui", "word": "安い", "reading": "やすい", "pos": "い形容詞", "zh": "便宜", "en": "cheap",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "找餐廳", "ja": "この{辺|へん}に[[{安|やす}くて]]おいしい{店|みせ}はありますか。", "zh": "這附近有便宜又好吃的店嗎？", "en": "Is there a cheap and tasty restaurant around here?", "enFocus": "around here" },
+        { "theme": "gamedev", "register": "polite", "scene": "成本評估", "ja": "クラウドサーバーの[[{安|やす}い]]プランを{探|さが}しています。", "zh": "我們在找比較便宜的雲端伺服器方案。", "en": "We're looking for an affordable cloud server plan.", "enFocus": "affordable" },
+        { "theme": "marketing", "register": "polite", "scene": "發售優惠", "ja": "{発売|はつばい}{記念|きねん}で、{一週間|いっしゅうかん}だけ30%[[{安|やす}く]]なります。", "zh": "為紀念發售，限時一週打七折。", "en": "To celebrate the launch, it's 30% off for one week only.", "enFocus": "launch" }
+      ]
+    },
+    {
+      "id": "n5-hayai", "word": "早い", "reading": "はやい", "pos": "い形容詞", "zh": "早", "en": "early",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "行程安排", "ja": "{明日|あした}は{朝|あさ}が[[{早|はや}い]]ので、{今日|きょう}は{早|はや}めに{寝|ね}ます。", "zh": "明天要早起，所以今天早點睡。", "en": "I have an early start tomorrow, so I'll go to bed early tonight.", "enFocus": "early start" },
+        { "theme": "gamedev", "register": "business", "scene": "回覆合作方", "ja": "できるだけ[[{早|はや}く]]{修正版|しゅうせいばん}をお{送|おく}りします。", "zh": "我們會盡快送上修正版。", "en": "We'll send the fixed version as soon as possible.", "enFocus": "as soon as possible" },
+        { "theme": "marketing", "register": "polite", "scene": "預購宣傳", "ja": "[[{早|はや}く]]{予約|よやく}した{人|ひと}は、{限定|げんてい}スキンがもらえます！", "zh": "提早預購的人可以獲得限定造型！", "en": "Early pre-orders get an exclusive skin!", "enFocus": "pre-orders" }
+      ]
+    },
+    {
+      "id": "n5-isogashii", "word": "忙しい", "reading": "いそがしい", "pos": "い形容詞", "zh": "忙碌", "en": "busy",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "店內", "ja": "{店員|てんいん}さんが[[{忙|いそが}し]]そうなので、あとで{聞|き}きましょう。", "zh": "店員看起來很忙，我們等一下再問吧。", "en": "The staff look busy, so let's ask later.", "enFocus": "later" },
+        { "theme": "gamedev", "register": "business", "scene": "商務請託", "ja": "お[[{忙|いそが}しい]]ところすみませんが、{確認|かくにん}をお{願|ねが}いできますか。", "zh": "百忙之中打擾了，可以麻煩您確認嗎？", "en": "Sorry to bother you when you're busy, but could you check this?", "enFocus": "bother" },
+        { "theme": "marketing", "register": "polite", "scene": "團隊日常", "ja": "{発売|はつばい}{前|まえ}はマーケティングチームが{一番|いちばん}[[{忙|いそが}しい]]です。", "zh": "發售前是行銷團隊最忙的時候。", "en": "The marketing team is busiest right before launch.", "enFocus": "busiest" }
+      ]
+    },
+    {
+      "id": "n5-tanoshii", "word": "楽しい", "reading": "たのしい", "pos": "い形容詞", "zh": "開心；愉快", "en": "fun; enjoyable",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "分享旅程", "ja": "{日本|にほん}の{旅行|りょこう}はとても[[{楽|たの}しかった]]です。", "zh": "日本之旅非常開心。", "en": "I really enjoyed my trip to Japan.", "enFocus": "enjoyed" },
+        { "theme": "gamedev", "register": "polite", "scene": "企劃理念", "ja": "{友達|ともだち}と{一緒|いっしょ}だともっと[[{楽|たの}しい]]ゲームにしたいです。", "zh": "我們想做一款跟朋友一起玩會更開心的遊戲。", "en": "We want to make a game that's even more fun with friends.", "enFocus": "even more" },
+        { "theme": "marketing", "register": "casual", "scene": "直播後貼文", "ja": "{今日|きょう}の{配信|はいしん}、[[{楽|たの}しかった]]！みんなありがとう！", "zh": "今天的直播好開心！謝謝大家！", "en": "Today's stream was so much fun! Thanks, everyone!", "enFocus": "Thanks, everyone" }
+      ]
+    },
+    {
+      "id": "n5-yuumei", "word": "有名", "reading": "ゆうめい", "pos": "な形容詞", "zh": "有名", "en": "famous",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "美食", "ja": "この{町|まち}で[[{有名|ゆうめい}]]な{食|た}べ{物|もの}は{何|なん}ですか。", "zh": "這個城鎮有名的食物是什麼？", "en": "What food is this town famous for?", "enFocus": "famous for" },
+        { "theme": "gamedev", "register": "polite", "scene": "外包合作", "ja": "[[{有名|ゆうめい}]]なイラストレーターにキャラデザを{頼|たの}みました。", "zh": "我們委託了知名繪師設計角色。", "en": "We asked a famous illustrator to do the character designs.", "enFocus": "illustrator" },
+        { "theme": "marketing", "register": "polite", "scene": "網紅合作", "ja": "[[{有名|ゆうめい}]]なVTuberにゲームを{実況|じっきょう}してもらいました。", "zh": "我們請到知名 VTuber 實況我們的遊戲。", "en": "A famous VTuber did a live playthrough of our game.", "enFocus": "playthrough" }
+      ]
+    },
+    {
+      "id": "n5-daijoubu", "word": "大丈夫", "reading": "だいじょうぶ", "pos": "な形容詞", "zh": "沒問題；沒事", "en": "okay; all right",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "點餐", "ja": "{英語|えいご}のメニューで[[{大丈夫|だいじょうぶ}]]です。", "zh": "英文菜單就可以了。", "en": "An English menu is fine.", "enFocus": "fine" },
+        { "theme": "gamedev", "register": "business", "scene": "確認時程", "ja": "そのスケジュールで[[{大丈夫|だいじょうぶ}]]です。よろしくお{願|ねが}いします。", "zh": "那個時程沒問題，麻煩您了。", "en": "That schedule works for us. Thank you.", "enFocus": "works for us" },
+        { "theme": "marketing", "register": "polite", "scene": "素材授權", "ja": "{公式|こうしき}{素材|そざい}は{配信|はいしん}で{使|つか}っても[[{大丈夫|だいじょうぶ}]]です。", "zh": "官方素材可以在直播中使用。", "en": "It's okay to use official assets in your streams.", "enFocus": "assets" }
+      ]
+    },
+    {
+      "id": "n5-suki", "word": "好き", "reading": "すき", "pos": "な形容詞", "zh": "喜歡", "en": "to like",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "閒聊", "ja": "{日本|にほん}の{温泉|おんせん}が[[{好|す}き]]です。", "zh": "我喜歡日本的溫泉。", "en": "I like Japanese hot springs.", "enFocus": "hot springs" },
+        { "theme": "gamedev", "register": "polite", "scene": "自我介紹", "ja": "{子|こ}どものころからRPGが[[{好|す}き]]で、ゲーム{業界|ぎょうかい}に{入|はい}りました。", "zh": "我從小就喜歡 RPG，所以進了遊戲業。", "en": "I've loved RPGs since I was a kid, so I got into the game industry.", "enFocus": "game industry" },
+        { "theme": "marketing", "register": "polite", "scene": "社群互動", "ja": "このキャラが[[{好|す}き]]な{人|ひと}は「いいね」してください！", "zh": "喜歡這個角色的人請按讚！", "en": "If you like this character, hit \"Like\"!", "enFocus": "hit" }
+      ]
+    },
+    {
+      "id": "n5-jouzu", "word": "上手", "reading": "じょうず", "pos": "な形容詞", "zh": "擅長；厲害", "en": "good at; skillful",
+      "examples": [
+        { "theme": "travel", "register": "polite", "scene": "閒聊應對", "ja": "「{日本語|にほんご}が[[{上手|じょうず}]]ですね」「いえいえ、まだまだです」", "zh": "「你日文很好耶！」「沒有啦，還差得遠。」", "en": "\"Your Japanese is good!\" \"Oh no, I still have a long way to go.\"", "enFocus": "a long way to go" },
+        { "theme": "gamedev", "register": "polite", "scene": "介紹同事", "ja": "{彼女|かのじょ}はアニメーションを{作|つく}るのがとても[[{上手|じょうず}]]です。", "zh": "她很擅長做動畫。", "en": "She's very good at making animations.", "enFocus": "good at" },
+        { "theme": "marketing", "register": "polite", "scene": "網紅評估", "ja": "あのストリーマーはゲームの{魅力|みりょく}を{伝|つた}えるのが[[{上手|じょうず}]]です。", "zh": "那位實況主很會傳達遊戲的魅力。", "en": "That streamer is great at showing what makes a game appealing.", "enFocus": "appealing" }
+      ]
+    }
+  ]
+}

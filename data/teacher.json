@@ -1,0 +1,9 @@
+{
+  "updated": "2026-11-24",
+  "message": "歡迎開始！第一週先把 50 個 N5 單字跑過一輪，每天練習幾分鐘就好。累積大約一週的作答紀錄後，跟我說「幫我檢視測驗成果」，我會依你的弱點調整題目。",
+  "newPerDay": 8,
+  "focus": {
+    "themes": { "travel": 1, "gamedev": 1, "marketing": 1 },
+    "types": { "meaning": 1, "word": 1, "listen": 1, "cloze": 1, "say": 1.2, "english": 0.8 }
+  }
+}
