@@ -1,6 +1,6 @@
 // Service Worker：有網路時抓最新版，沒網路時用快取（旅途中也能練習）。
 // 修改 App 檔案後，把 VERSION 加一，舊快取會被清掉。
-const VERSION = 'v1';
+const VERSION = 'v2';
 const CACHE = `nihongo-${VERSION}`;
 const SHELL = [
   './',

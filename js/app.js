@@ -8,7 +8,7 @@ import { getProgress, getLog, recordAnswer, exportAll, importAll, resetAll } fro
 import { sync, syncStatus, onSyncChange, testConnection } from './sync.js';
 import { computeStats } from './stats.js';
 
-const APP_VERSION = '0.1.0';
+const APP_VERSION = '0.2.0';
 const view = document.getElementById('view');
 let teacher = { newPerDay: 8, focus: { themes: {}, types: {} }, message: '' };
 let session = null;
@@ -65,9 +65,10 @@ function exampleHtml(ex) {
   </div>`;
 }
 
-function wordCardHtml(w, { examples = w.examples } = {}) {
+function wordCardHtml(w, { examples = w.examples, kanaFirst = false } = {}) {
+  const [main, second] = kanaFirst ? [w.reading, w.word] : [w.word, w.reading];
   return `<div class="word-head">
-      <div><div class="w ja" lang="ja">${esc(w.word)}</div><div class="r ja" lang="ja">${esc(w.reading)}</div></div>
+      <div><div class="w ja" lang="ja">${esc(main)}</div><div class="r ja" lang="ja">${esc(second)}</div></div>
       <div style="margin-left:auto">${speakBtn(w.reading, 'ja-JP', '播放發音')}</div>
     </div>
     <div class="meaning"><b>${esc(w.zh)}</b> <span class="en">· ${esc(w.en)}</span> <span class="badge">${esc(w.pos)}</span></div>
@@ -231,7 +232,7 @@ function showItem() {
     item.cardShown = true;
     view.innerHTML = `${sessionTop()}
       <div class="q-type"><span class="badge" style="background:var(--accent);color:#fff">新單字</span><span>先看一下，等等就考你</span></div>
-      <section class="card">${wordCardHtml(item.word)}</section>
+      <section class="card">${wordCardHtml(item.word, { kanaFirst: s.script !== 'kanji' })}</section>
       <div class="next-bar"><button class="btn primary block" data-action="next">記住了，開始作答</button></div>`;
     bindSessionTop();
     $('[data-action="next"]').addEventListener('click', showItem);
@@ -295,7 +296,7 @@ function answer(i) {
   const fb = $('#feedback');
   fb.innerHTML = `<section class="card">
     <div class="verdict ${correct ? 'ok' : 'ng'}">${correct ? '✓ 答對了' : '✗ 再記一下'}</div>
-    ${wordCardHtml(item.word, { examples: [ex] })}
+    ${wordCardHtml(item.word, { examples: [ex], kanaFirst: getSettings().script !== 'kanji' })}
   </section>`;
   fb.classList.remove('hidden');
   $('#next-bar').classList.remove('hidden');
@@ -488,7 +489,11 @@ function renderSettings() {
         <select id="newPerDay">${[3, 5, 8, 10, 15, 20].map((n) => `<option value="${n}" ${n === newPerDay ? 'selected' : ''}>${n} 個</option>`).join('')}</select></div>
       <div class="field"><label for="size">每次練習最多題數</label>
         <select id="size">${[10, 20, 30, 50].map((n) => `<option value="${n}" ${n === s.sessionSize ? 'selected' : ''}>${n} 題</option>`).join('')}</select></div>
-      <div class="field"><label>振假名</label>
+      <div class="field"><label>題目中的日文</label>
+        <div class="seg" id="script">${[['kana', '只用假名'], ['kanji', '漢字＋振假名']].map(([k, v]) => `<button data-k="${k}" aria-pressed="${s.script === k}">${v}</button>`).join('')}</div>
+        <div class="sub" style="margin-top:6px">「只用假名」可避免看漢字就猜到意思；作答後的解說仍會附上漢字。</div></div>
+      <div class="switch-row"><label for="listening">出聽力題<span class="sub" style="display:block">在外面不方便出聲時建議關閉</span></label><input id="listening" type="checkbox" ${s.listening ? 'checked' : ''}></div>
+      <div class="field"><label>振假名（單字頁、作答解說）</label>
         <div class="seg" id="furi">${[['show', '顯示'], ['tap', '點一下才顯示'], ['hide', '隱藏']].map(([k, v]) => `<button data-k="${k}" aria-pressed="${s.furigana === k}">${v}</button>`).join('')}</div></div>
       <div class="switch-row"><label for="autoplay">自動播放發音</label><input id="autoplay" type="checkbox" ${s.autoplay ? 'checked' : ''}></div>
       <div class="field"><label for="rate">語速</label>
@@ -538,6 +543,11 @@ function renderSettings() {
   $('#size').addEventListener('change', (e) => setSettings({ sessionSize: Number(e.target.value) }));
   $('#rate').addEventListener('change', (e) => setSettings({ rate: Number(e.target.value) }));
   $('#autoplay').addEventListener('change', (e) => setSettings({ autoplay: e.target.checked }));
+  $('#listening').addEventListener('change', (e) => setSettings({ listening: e.target.checked }));
+  $$('#script button').forEach((b) => b.addEventListener('click', () => {
+    setSettings({ script: b.dataset.k });
+    $$('#script button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+  }));
   $$('#furi button').forEach((b) => b.addEventListener('click', () => {
     setSettings({ furigana: b.dataset.k }); applyAppearance();
     $$('#furi button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));

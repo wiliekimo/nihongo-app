@@ -23,18 +23,28 @@ export function remove(key) {
   try { localStorage.removeItem(PREFIX + key); } catch { /* ignore */ }
 }
 
+export const SETTINGS_VERSION = 2;
 export const DEFAULT_SETTINGS = {
+  v: SETTINGS_VERSION,
   scriptUrl: '',
   token: '',
   newPerDay: null,        // null = 用老師設定（data/teacher.json）
   sessionSize: 20,
-  furigana: 'show',       // show | tap | hide
-  autoplay: true,
+  script: 'kana',         // 題目文字：kana（只用假名）| kanji（漢字＋振假名）
+  listening: false,       // 是否出聽力題
+  furigana: 'show',       // show | tap | hide（單字頁與漢字模式）
+  autoplay: false,        // 作答後自動播放發音
   rate: 0.9,
 };
 
 export function getSettings() {
-  return { ...DEFAULT_SETTINGS, ...load('settings', {}) };
+  const saved = load('settings', {});
+  if ((saved.v || 1) < 2) {
+    // v2：使用者希望在外面不出聲、題目不顯示漢字
+    Object.assign(saved, { v: 2, script: 'kana', listening: false, autoplay: false });
+    save('settings', saved);
+  }
+  return { ...DEFAULT_SETTINGS, ...saved };
 }
 
 export function setSettings(patch) {

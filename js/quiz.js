@@ -3,6 +3,7 @@ import { allWords } from './data.js';
 import { renderJa, blankEn, esc } from './furigana.js';
 import { stage, isDue } from './srs.js';
 import { canSpeak } from './speech.js';
+import { getSettings } from './store.js';
 
 /** 今天開始學的新字數（由進度推算，跨裝置一致）。 */
 function newToday(progress, now = Date.now()) {
@@ -68,7 +69,7 @@ function pickType(word, rec, teacher, { onlyExampleTypes = false } = {}) {
   const fresh = !rec || (rec.correct === 0);
   let types = fresh ? ['meaning', 'listen'] : Object.keys(TYPES);
   if (onlyExampleTypes) types = EXAMPLE_TYPES;
-  if (!canSpeak()) types = types.filter((t) => t !== 'listen');
+  if (!canSpeak() || !getSettings().listening) types = types.filter((t) => t !== 'listen');
   if (!types.length) types = ['meaning'];
   const tw = teacher?.focus?.types || {};
   return weightedPick(types, (t) => tw[t] ?? 1);
@@ -78,6 +79,10 @@ function pickType(word, rec, teacher, { onlyExampleTypes = false } = {}) {
 export function makeQuestion(word, type, { teacher, theme } = {}) {
   const words = allWords();
   const others = words.filter((w) => w.id !== word.id);
+  const kanaMode = getSettings().script !== 'kanji';
+  // 題目裡顯示的日文：假名模式只用讀音，不出現漢字
+  const jaWord = (w) => `<span class="ja" lang="ja">${esc(kanaMode ? w.reading : w.word)}</span>`;
+  const wordKey = (w) => (kanaMode ? w.reading : w.word);
   const q = { type, word, theme: null, example: null, options: [], answer: '', promptHtml: '', speak: null };
 
   const optionList = (correctItem, distractors, labelOf, valueOf, subOf) =>
@@ -86,7 +91,9 @@ export function makeQuestion(word, type, { teacher, theme } = {}) {
   switch (type) {
     case 'meaning': {
       const ds = pickDistractors(word, others, (w) => w.zh);
-      q.promptHtml = `<div class="big ja" lang="ja">${esc(word.word)}</div><div class="reading ja furi-line" lang="ja">${esc(word.reading)}</div>`;
+      q.promptHtml = kanaMode
+        ? `<div class="big ja" lang="ja">${esc(word.reading)}</div>`
+        : `<div class="big ja" lang="ja">${esc(word.word)}</div><div class="reading ja furi-line" lang="ja">${esc(word.reading)}</div>`;
       q.options = optionList(word, ds, (w) => esc(w.zh), (w) => w.zh);
       q.answer = word.zh;
       q.speak = { text: word.reading, lang: 'ja-JP' };
@@ -95,9 +102,9 @@ export function makeQuestion(word, type, { teacher, theme } = {}) {
     }
     case 'word': {
       const samePos = others.filter((w) => w.pos === word.pos);
-      const ds = pickDistractors(word, samePos.length >= 3 ? samePos : others, (w) => w.word);
+      const ds = pickDistractors(word, samePos.length >= 3 ? samePos : others, wordKey);
       q.promptHtml = `<div class="mid">${esc(word.zh)}</div><div class="hint">${esc(word.en)}</div>`;
-      q.options = optionList(word, ds, (w) => `<span class="ja" lang="ja">${esc(w.word)}</span>`, (w) => w.word);
+      q.options = optionList(word, ds, jaWord, (w) => w.word);
       q.answer = word.word;
       q.ask = '日文怎麼說？';
       break;
@@ -114,10 +121,10 @@ export function makeQuestion(word, type, { teacher, theme } = {}) {
     case 'cloze': {
       const ex = pickExample(word, teacher, theme);
       const samePos = others.filter((w) => w.pos === word.pos);
-      const ds = pickDistractors(word, samePos.length >= 3 ? samePos : others, (w) => w.word);
+      const ds = pickDistractors(word, samePos.length >= 3 ? samePos : others, wordKey);
       q.example = ex; q.theme = ex.theme;
-      q.promptHtml = `<div class="scene">${esc(ex.scene)}</div><div class="mid ja" lang="ja">${renderJa(ex.ja, { blank: true })}</div><div class="hint">${esc(ex.zh)}</div>`;
-      q.options = optionList(word, ds, (w) => `<span class="ja" lang="ja">${esc(w.word)}</span>`, (w) => w.word, (w) => w.reading);
+      q.promptHtml = `<div class="scene">${esc(ex.scene)}</div><div class="mid ja" lang="ja">${renderJa(ex.ja, { blank: true, kana: kanaMode })}</div><div class="hint">${esc(ex.zh)}</div>`;
+      q.options = optionList(word, ds, jaWord, (w) => w.word, (w) => (kanaMode ? '' : w.reading));
       q.answer = word.word;
       q.ask = '空格要填哪個字？（選項為原形）';
       break;
@@ -128,7 +135,7 @@ export function makeQuestion(word, type, { teacher, theme } = {}) {
       const ds = pickDistractors(ex, pool, (e) => e.ja);
       q.example = ex; q.theme = ex.theme;
       q.promptHtml = `<div class="scene">${esc(ex.scene)}</div><div class="mid">「${esc(ex.zh)}」</div>`;
-      q.options = optionList(ex, ds, (e) => `<span class="ja" lang="ja">${renderJa(e.ja, { highlight: false })}</span>`, (e) => e.ja);
+      q.options = optionList(ex, ds, (e) => `<span class="ja" lang="ja">${renderJa(e.ja, { highlight: false, kana: kanaMode })}</span>`, (e) => e.ja);
       q.answer = ex.ja;
       q.sentence = true;
       q.ask = '你想這樣說，日文要怎麼講？';

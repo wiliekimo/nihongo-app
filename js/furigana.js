@@ -4,24 +4,24 @@
 
 const esc = (s) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-function rubyize(s) {
-  return esc(s).replace(/\{([^{}|]+)\|([^{}]+)\}/g, '<ruby>$1<rt>$2</rt></ruby>');
+function rubyize(s, toKana = false) {
+  return esc(s).replace(/\{([^{}|]+)\|([^{}]+)\}/g, toKana ? '$2' : '<ruby>$1<rt>$2</rt></ruby>');
 }
 
 /**
  * 轉成 HTML。
  * @param {string} ja 標記過的日文
- * @param {{blank?: boolean, highlight?: boolean}} opts
+ * @param {{blank?: boolean, highlight?: boolean, kana?: boolean}} opts kana=true 時漢字全部換成假名
  */
-export function renderJa(ja, { blank = false, highlight = true } = {}) {
+export function renderJa(ja, { blank = false, highlight = true, kana: toKana = false } = {}) {
   const m = ja.match(/^(.*)\[\[(.*)\]\](.*)$/s);
-  if (!m) return rubyize(ja);
+  if (!m) return rubyize(ja, toKana);
   const [, before, target, after] = m;
   let mid;
   if (blank) mid = '<span class="blank" aria-label="空格"></span>';
-  else if (highlight) mid = `<span class="target">${rubyize(target)}</span>`;
-  else mid = rubyize(target);
-  return rubyize(before) + mid + rubyize(after);
+  else if (highlight) mid = `<span class="target">${rubyize(target, toKana)}</span>`;
+  else mid = rubyize(target, toKana);
+  return rubyize(before, toKana) + mid + rubyize(after, toKana);
 }
 
 /** 只留漢字（去掉振假名與標記），用於顯示純文字。 */
